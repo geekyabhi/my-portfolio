@@ -14,7 +14,8 @@ const Login = (props) => {
 		setpassword(() => e.target.value);
 	};
 
-	const submitData = () => {
+	const submitData = (e) => {
+		e.preventDefault();
 		let obj = {
 			email,
 			password,
@@ -32,7 +33,7 @@ const Login = (props) => {
 				<div className={styles.wrapper}>
 					<div className={styles.formWrapper}>
 						<form className={styles.form}>
-							<label className={styles.label}>Email</label>
+							<div className={styles.label}>Email</div>
 							<input
 								className={styles.input}
 								type="text"
@@ -40,7 +41,7 @@ const Login = (props) => {
 								onChange={changeEmail}
 								required
 							></input>
-							<label className={styles.label}>Password</label>
+							<div className={styles.label}>Password</div>
 							<input
 								required
 								className={styles.input}
@@ -48,7 +49,12 @@ const Login = (props) => {
 								value={password}
 								onChange={changePassword}
 							></input>
-							<button onSubmit={submitData}>Login</button>
+							<button
+								onSubmit={submitData}
+								className={styles.button}
+							>
+								Login
+							</button>
 						</form>
 					</div>
 				</div>
