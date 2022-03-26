@@ -1,7 +1,7 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
-import Moment from "react-moment";
-import Loading from "../../components/Loading";
+// import axios from "axios";
+import React, { useState } from "react";
+// import Moment from "react-moment";
+// import Loading from "../../components/Loading";
 import styles from "./styles.module.css";
 const Login = (props) => {
 	const [email, setemail] = useState("");

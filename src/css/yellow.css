@@ -1,16 +1,43 @@
-.aside .logo a::before{
-  border-top: 4px solid #ffcc00;
-  border-left: 4px solid #ffcc00;
+::-webkit-scrollbar {
+	width: 10px;
 }
-.aside .logo a::after{
-  border-right: 4px solid #ffcc00;
-  border-bottom: 4px solid #ffcc00;
+
+/* Track */
+::-webkit-scrollbar-track {
+	visibility: hidden;
+	width: 20px;
+}
+
+::-webkit-scrollbar-track:hover {
+	visibility: hidden;
+	width: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	border-radius: 100px;
+	background-color: #ffcc00;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	width: 10px;
+	/* background: #555; */
+}
+
+.aside .logo a::before {
+	border-top: 4px solid #ffcc00;
+	border-left: 4px solid #ffcc00;
+}
+.aside .logo a::after {
+	border-right: 4px solid #ffcc00;
+	border-bottom: 4px solid #ffcc00;
 }
 body.dark .aside .nav li a:hover,
 body.dark .aside .nav li a.active,
 .aside .nav li a:hover,
-.aside .nav li a.active{
-  color: #ffcc00;
+.aside .nav li a.active {
+	color: #ffcc00;
 }
 .about .about-content .skills .skill-item .progress .progress-in,
 .about .about-content .timeline .timeline-item::before,
@@ -21,14 +48,14 @@ body.dark .aside .nav li a.active,
 .home .intro .social-link a,
 .aside .nav-toggler span,
 .aside .nav-toggler span::before,
-.aside .nav-toggler span::after{
-  background-color: #ffcc00;
+.aside .nav-toggler span::after {
+	background-color: #ffcc00;
 }
 .contact-text,
 .contact .contact-info-item .icon .fa,
 .contact .contact-info-item .icon .fab,
 .about .about-content .skills h1,
 .timeline-text span,
-.about .about-content .about-text h3 span{
-  color: #ffcc00;
+.about .about-content .about-text h3 span {
+	color: #ffcc00;
 }
